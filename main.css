@@ -1,0 +1,178 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Orbitron";
+  background-color: rgb(18, 18, 18);
+  padding-bottom: 500px;
+  color: white;
+}
+
+.header{
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.7);
+  clip-path: polygon(0 0, 100% 0, 100% 60%, 30% 60%, 25% 100%, 0 100% );
+  z-index: 10;
+}
+
+#header-lazaro-container{
+  width: 25%;
+  height: 100%;
+}
+
+#header-lazaro{
+  color: white;
+  font-size: 70px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 20px;
+}
+.header-links{
+  position: fixed;
+  top: 0;
+  left: 30%;
+  height: 60px;
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+}
+.header-links a{
+  margin-top: auto;
+  margin-bottom: auto;
+  color: white;
+  font-size: 20px;
+}
+
+.header-links a:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#title_video {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.title-screen {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.heading-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  color: white;
+  padding: 10px;
+  --s: 100px;
+  clip-path: polygon(0 0, calc(100% - var(--s)) 0, 100% var(--s), 100% 100%, 0 100%);
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+}
+
+.auction-grid {
+  display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(min(550px, 100%), 1fr));
+  place-content: space-evenly;
+}
+
+.auction-container {
+  height: 400px;
+  background-color: rgb(29, 29, 29);
+  margin: 30px;
+  border-radius: 20px;
+  display: flex;
+  align-items: top;
+}
+
+.auction-video {
+  height: 100%;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.auction-heading {
+  color: white;
+  padding: 20px;
+  flex-grow: 1;
+  font-size: 25px;
+}
+
+.auction-price{
+  color: white;
+  padding-left: 20px;
+  font-size: 20px;
+}
+
+.auction-bid-btn-container{
+  padding: 0px;
+  width: 180px;
+  display: flex;
+  justify-content: space-around;
+  height: fit-content;
+  margin-left: 20px;
+}
+.auction-bid-btn{
+  background: none;
+  border-style: none;
+  color: rgb(29, 29, 29);
+  background-color: white;
+  height: 30px;
+  font-size: 23px;
+  width: 130px;
+  clip-path: polygon(0 0 , 100% 0, calc(100% - 10px) 100%, 0 100%);
+}
+
+.auction-bid-btn-deco{
+  padding: 0px;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  clip-path: polygon(10px 0 , 100% 0, calc(100% - 10px) 100%, 0 100%);
+  transition: 0.3s;
+}
+
+.auction-bid-btn-container:hover .auction-bid-btn-deco{
+  margin-left: -8px;
+}
+
+.my-art-preview-container{
+  display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(min(fit-content, fit-content), 1fr));
+  place-content: space-evenly;
+}
+.my-art-container-small{
+  height: 550px;
+  position: relative;
+  width: fit-content;
+  align-items: top;
+}
+
+
+.my-art-container-small video{
+  height: 100%;
+  border-radius: 20px;
+  mask: linear-gradient(to top, transparent, black 40%);
+}
+
+.video_subheading{
+  display: inline-block;
+  position:absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
