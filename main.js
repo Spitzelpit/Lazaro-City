@@ -1,4 +1,3 @@
-const BidContent = "Bid now";
 function createRandomString(length) {
   const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
   let result = "";
@@ -13,7 +12,7 @@ function changecontent(target) {
   target.innerHTML = newcontent;
 }
 
-function shuffle_text(event) {
+function shuffle_text(event, BidContent) {
   const target = event.target;
 
   const interval = setInterval(function() {
