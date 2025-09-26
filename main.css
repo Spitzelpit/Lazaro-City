@@ -151,21 +151,26 @@ body {
 
 .my-art-preview-container{
   display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(min(fit-content, fit-content), 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   place-content: space-evenly;
+  gap: 30px;
+  margin: 50px 30px;
 }
 .my-art-container-small{
   height: 550px;
   position: relative;
-  width: fit-content;
+  display: flex; 
+  justify-content: center;
   align-items: top;
 }
 
 
 .my-art-container-small video{
   height: 100%;
+  /*width: 400px;*/
   border-radius: 20px;
   mask: linear-gradient(to top, transparent, black 40%);
+  object-fit: cover;
 }
 
 .video_subheading{
@@ -174,5 +179,6 @@ body {
   bottom: 0px;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 100%;
+  width: 400px;
   text-align: center;
+}
