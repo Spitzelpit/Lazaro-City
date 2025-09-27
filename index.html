@@ -12,14 +12,28 @@
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <div class="hamburger">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <div class="mobile-menu-fullscreen">
+    <ul>
+      <li><a href="artworks.html">Artworks</a></li>
+      <li><a>Art on Chain</a></li>
+      <li><a href="https://displate.com/artist/lazaro45ive">Prints</a></li>
+      <li><a>About</a></li>
+      <li><a>Contact</a></li>
+    </ul>
+  </div>
   <div class="header" id="navbar">
     <div id="header-lazaro-container">
       <h1 id="header-lazaro" onclick="location.href='index.html'">Lazaro</h1>
     </div>
     <div class="header-links">
-      <a>Portofolio</a>
+      <a href="artworks.html">Artworks</a>
       <a>Art on Chain</a>
-      <a>Prints</a>
+      <a href="https://displate.com/artist/lazaro45ive">Prints</a>
       <a>About</a>
       <a>Contact</a>
     </div>
@@ -41,7 +55,7 @@
       <p class="auction-heading">Digital Rain - Collab w/ Louis Dazy</p>
       <p class="auction-price"> Starting Bid:<br>1,25ETH </p>
       <div class="auction-bid-btn-container">
-        <button class="auction-bid-btn" onmouseover="shuffle_text(event, 'Bid Now')">Bid now</button>
+        <button class="auction-bid-btn" onmouseover="shuffle_text(event, 'Bid now')" onclick="location.href='https://foundation.app/mint/eth/0xf93eACDd97dbeae0A17eE58936F32308Ab7cd0bF/2'">Bid now</button>
         <div class="auction-bid-btn-deco"></div>
         <div class="auction-bid-btn-deco"></div>
       </div>
@@ -72,8 +86,8 @@
       </video>
       <p class="video_subheading">I Feel Lost In This World</p>
     </div>
-    <button class="see-more-btn" onmouseover="shuffle_text(event, 'See more')">See more</button>
   </div>
+  <button class="see-more-btn" onmouseover="shuffle_text(event, 'See more')" onclick="location.href='artworks.html'">See more</button>
 
 </body>
 </html>

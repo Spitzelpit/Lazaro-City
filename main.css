@@ -6,7 +6,42 @@ body {
   padding-bottom: 500px;
   color: white;
 }
+a{
+  text-decoration: none;
+}
+.hamburger{
+  position: fixed;
+  right: 30px;
+  top: 30px;
+  width: 60px;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+  backdrop-filter: blur(10px);
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px;
+  z-index: 10;
+}
 
+.hamburger div{
+  width: 75%;
+  height: 5px;
+  background-color: white;
+  border-radius: 2px;
+}
+
+.mobile-menu-fullscreen{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(10px);
+  z-index: 9;
+  display: none;
+}
 .header{
   position: fixed;
   width: 100%;
@@ -74,6 +109,7 @@ body {
 
 .heading-wrapper {
   position: absolute;
+  width: fit-content;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -158,7 +194,7 @@ body {
 
 .my-art-preview-container{
   display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   place-content: space-evenly;
   gap: 30px;
   margin: 50px 30px;
@@ -206,24 +242,46 @@ body {
   height: 30px;
   font-size: 23px;
   width: 130px;
-clip-path: polygon(5px 0, 100% 0, 100% calc(100% - 5px), calc(100% - 5px) 100%, 0 100%, 0 5px);
+  clip-path: polygon(5px 0, 100% 0, 100% calc(100% - 5px), calc(100% - 5px) 100%, 0 100%, 0 5px);
+  margin-left: 10%;
 }
 
 
+
+@media only screen and (max-width: 1700px) {
+  .heading-wrapper{
+    --s: 50px;
+  }
+
+} 
 @media only screen and (max-width: 1100px) {
   #header-lazaro{
     font-size: 45px;
+  }
+  .heading-wrapper{
+    font-size: 1.5vh;
+    --s: 25px;
   }
 } 
 @media only screen and (max-width: 768px) {
   #navbar{
     display: none;
   }
+  .hamburger{
+    display: flex;
+  }
   .heading-wrapper{
-    font-size: 2vh;
-    clip-path: polygon(0 0, calc(100% - 25px) 0, 100% 25px, 100% 100%, 0 100%);
+    font-size: 1.5vh;
+    --s: 25px;
+    width: 80%;
   }
   .auction-container{
-      flex-direction: column;
+    flex-direction: column;
+    height: fit-content;
+    padding-bottom: 50px;
+  }
+  .auction-video{
+    height: auto;
+    width: 100%;
   }
 }
