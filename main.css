@@ -21,16 +21,18 @@ body {
 }
 
 #header-lazaro-container{
-  width: 25%;
+  position: relative;
   height: 100%;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #header-lazaro{
   color: white;
   font-size: 70px;
-  margin-top: auto;
-  margin-bottom: auto;
-  margin-left: 20px;
+  margin: 0;
   cursor: pointer;
 }
 .header-links{
@@ -172,7 +174,6 @@ body {
 
 .my-art-container-small video{
   height: 100%;
-  /*width: 400px;*/
   border-radius: 20px;
   mask: linear-gradient(to top, transparent, black 40%);
   object-fit: cover;
@@ -206,4 +207,23 @@ body {
   font-size: 23px;
   width: 130px;
 clip-path: polygon(5px 0, 100% 0, 100% calc(100% - 5px), calc(100% - 5px) 100%, 0 100%, 0 5px);
+}
+
+
+@media only screen and (max-width: 1100px) {
+  #header-lazaro{
+    font-size: 45px;
+  }
+} 
+@media only screen and (max-width: 768px) {
+  #navbar{
+    display: none;
+  }
+  .heading-wrapper{
+    font-size: 2vh;
+    clip-path: polygon(0 0, calc(100% - 25px) 0, 100% 25px, 100% 100%, 0 100%);
+  }
+  .auction-container{
+      flex-direction: column;
+  }
 }
