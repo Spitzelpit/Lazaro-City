@@ -1,3 +1,5 @@
+const mobile_menu = document.getElementById("mobile-menu");
+
 function createRandomString(length) {
   const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
   let result = "";
@@ -35,4 +37,6 @@ window.onscroll = function() {
   }
   prevScrollpos = currentScrollPos;
 }
+
+
 

@@ -10,21 +10,30 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/06458e4a78.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <div class="hamburger">
+  <div class="hamburger" onclick="document.getElementById('mobile-menu').classList.toggle('menu-show')">
     <div></div>
     <div></div>
     <div></div>
   </div>
-  <div class="mobile-menu-fullscreen">
-    <ul>
-      <li><a href="artworks.html">Artworks</a></li>
-      <li><a>Art on Chain</a></li>
-      <li><a href="https://displate.com/artist/lazaro45ive">Prints</a></li>
-      <li><a>About</a></li>
-      <li><a>Contact</a></li>
-    </ul>
+  <div class="mobile-menu-fullscreen" id="mobile-menu">
+    <div class="mobile-menu-list">
+      <a href="artworks.html">Artworks</a>
+      <a>Art on Chain</a>
+      <a href="https://displate.com/artist/lazaro45ive">Prints</a>
+      <a>About</a>
+      <div class="icons">
+        <i class="fa-solid fa-envelope fa-xl" onclick="location.href='mailto:info@lazaro45ive.com'"></i>
+        <i class="fa-brands fa-discord fa-xl" onclick="location.href='https://discord.gg/BzCHZjnUkd'"></i>
+        <i class="fa-brands fa-x-twitter fa-xl" onclick="location.href='https://x.com/lazaro45ive'"></i>
+        <i class="fa-brands fa-instagram fa-xl" onclick="location.href='https://www.instagram.com/lazaro45ive'"></i>
+        <i class="fa-brands fa-patreon fa-xl" onclick="location.href='https://www.patreon.com/c/lazaro45ive'"></i>
+        <i class="fa-brands fa-artstation fa-xl" onclick="location.href='https://www.artstation.com/lazaro45ive'"></i>
+        <i class="fa-brands fa-tiktok fa-xl" onclick="location.href='https://www.tiktok.com/@lazaro45ive'"></i>
+    </div>
+    </div>
   </div>
   <div class="header" id="navbar">
     <div id="header-lazaro-container">
@@ -35,7 +44,15 @@
       <a>Art on Chain</a>
       <a href="https://displate.com/artist/lazaro45ive">Prints</a>
       <a>About</a>
-      <a>Contact</a>
+      <div class="icons">
+        <i class="fa-solid fa-envelope fa-xl" onclick="location.href='mailto:info@lazaro45ive.com'"></i>
+        <i class="fa-brands fa-discord fa-xl" onclick="location.href='https://discord.gg/BzCHZjnUkd'"></i>
+        <i class="fa-brands fa-x-twitter fa-xl" onclick="location.href='https://x.com/lazaro45ive'"></i>
+        <i class="fa-brands fa-instagram fa-xl" onclick="location.href='https://www.instagram.com/lazaro45ive'"></i>
+        <i class="fa-brands fa-patreon fa-xl" onclick="location.href='https://www.patreon.com/c/lazaro45ive'"></i>
+        <i class="fa-brands fa-artstation fa-xl" onclick="location.href='https://www.artstation.com/lazaro45ive'"></i>
+        <i class="fa-brands fa-tiktok fa-xl" onclick="location.href='https://www.tiktok.com/@lazaro45ive'"></i>
+    </div>
     </div>
   </div>
   <div class="title-screen">
