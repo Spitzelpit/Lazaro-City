@@ -292,15 +292,25 @@ a{
 
 .cv-text-div{
   width: 65%;
+  font-family: Roboto;
 }
 
 .cv-text-div p{
   width: 45%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 400px;
   font-size: 20px;
 }
+
+.cv-text-div p + p{
+  margin-top: 250px;
+}
+
+/*.cv-text-div p{
+  animation: appear 5s linear;
+  animation-timeline: view();
+  animation-range: -20% cover;
+}*/
 
 @media only screen and (max-width: 1700px) {
   .heading-wrapper{
@@ -345,4 +355,15 @@ a{
     border-bottom-right-radius: 5px;
   }
 
+}
+
+@keyframes appear{
+  from{
+    opacity: 0.4;
+    scale: 0.4;
+  }
+  to{
+    opacity: 1;
+    scale: 1;
+  }
 }
