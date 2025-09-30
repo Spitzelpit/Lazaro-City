@@ -9,18 +9,95 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/06458e4a78.js" crossorigin="anonymous"></script>
   <style>
     body{
       font-family: Roboto;
+      padding-bottom: 50vh;
     }
   </style>
 </head>
-<body style="height: 500vh;">
+<body>
+   <div class="hamburger" onclick="document.getElementById('mobile-menu').classList.toggle('menu-show')">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <div class="mobile-menu-fullscreen" id="mobile-menu">
+    <div class="mobile-menu-list">
+      <a href="artworks.html">Artworks</a>
+      <a href="art_on_chain.html">Art on Chain</a>
+      <a href="https://displate.com/artist/lazaro45ive">Prints</a>
+      <a href="cv.html">About</a>
+      <div class="icons">
+        <i class="fa-solid fa-envelope fa-xl" onclick="location.href='mailto:info@lazaro45ive.com'"></i>
+        <i class="fa-brands fa-discord fa-xl" onclick="location.href='https://discord.gg/BzCHZjnUkd'"></i>
+        <i class="fa-brands fa-x-twitter fa-xl" onclick="location.href='https://x.com/lazaro45ive'"></i>
+        <i class="fa-brands fa-instagram fa-xl" onclick="location.href='https://www.instagram.com/lazaro45ive'"></i>
+        <i class="fa-brands fa-patreon fa-xl" onclick="location.href='https://www.patreon.com/c/lazaro45ive'"></i>
+        <i class="fa-brands fa-artstation fa-xl" onclick="location.href='https://www.artstation.com/lazaro45ive'"></i>
+        <i class="fa-brands fa-tiktok fa-xl" onclick="location.href='https://www.tiktok.com/@lazaro45ive'"></i>
+    </div>
+    </div>
+  </div>
+  <div class="header" id="navbar">
+    <div id="header-lazaro-container">
+      <h1 id="header-lazaro" onclick="location.href='index.html'">Lazaro</h1>
+    </div>
+    <div class="header-links">
+      <a href="artworks.html">Artworks</a>
+      <a href="art_on_chain.html">Art on Chain</a>
+      <a href="https://displate.com/artist/lazaro45ive">Prints</a>
+      <a href="cv.html">About</a>
+      <div class="icons">
+        <i class="fa-solid fa-envelope fa-xl" onclick="location.href='mailto:info@lazaro45ive.com'"></i>
+        <i class="fa-brands fa-discord fa-xl" onclick="location.href='https://discord.gg/BzCHZjnUkd'"></i>
+        <i class="fa-brands fa-x-twitter fa-xl" onclick="location.href='https://x.com/lazaro45ive'"></i>
+        <i class="fa-brands fa-instagram fa-xl" onclick="location.href='https://www.instagram.com/lazaro45ive'"></i>
+        <i class="fa-brands fa-patreon fa-xl" onclick="location.href='https://www.patreon.com/c/lazaro45ive'"></i>
+        <i class="fa-brands fa-artstation fa-xl" onclick="location.href='https://www.artstation.com/lazaro45ive'"></i>
+        <i class="fa-brands fa-tiktok fa-xl" onclick="location.href='https://www.tiktok.com/@lazaro45ive'"></i>
+    </div>
+    </div>
+  </div>
   <img id="scroll-image" src="media/cv-images/img1.jpg">
   <div class="cv-text-div">
     <p class="cv-1">Umberto Votta, aka Lazaro, is a digital artist based in Milan, Italy. Born in 1991, he gained recognition in the digital art world, particularly in 3D art, with exhibitions in London and the United States, and features in industry magazines. His work blends the vivid tones of fantasy with futuristic settings inspired by the Cyberpunk genre. Vast megacities filled with neon and steel serve as backdrops for scenes of everyday life, aiming to spark reflection on the human-technology relationship in an increasingly digital and alienating world.</p>
     <p class="cv-2" style="color: rgb(173, 183, 195);">“I’ve been drawn to art since I can remember; I’ve produced electronic music for many years, back then I used to make my own EP’s covers using Gimp, those were my very first attempts at visual arts. During the Covid lockdown, in early 2020, I discovered Virtual Photography, which is the art of taking photos in videogames, and that was the beginning of my journey as “Lazaro”; as the world of gaming is very close to 3D, I soon discovered many artists that were doing some incredible stuff and I thought “wow I could really create my own worlds instead of taking shots in existing ones!”, so I started learning Blender and immediately fell in love with it. I’ve always been a fan of the cyberpunk genre, growing up with masterpieces like Blade Runner, Ghost In The Shell and Akira; among my very first and most important influences were the works by artists like Dangiuz, Max Hay and Daniel Liang, but the list goes on and on.”</p>
-
+    <div class="cv-container">  
+      <h3>2025</h3>
+      <ul>
+        <li>“You were my sweetest curse” @ NFTNYC 25, Times Square Billboards, New York</li>
+        <li>“We Are Just A Memory” @ Neon Punks event, Klein Phönix, Istanbul</li>
+      </ul>
+      <h3>2024</h3>
+      <ul>
+        <li>“Lost Souls Club” & “Fear Of Growing Old” for “MappingThe New Normals” by SuperchiefGallery @ Grand Palais Ephemere, NFT Paris ’24</li>
+        <li>“Dreamer’s Drift” @ NFTNYC 24, Times Square Billboards, New York</li>
+        <li>“Fear Of Growing Old” @ Shillr event in New York</li>
+        <li>“Lost Souls Club” @ NFCsummit Lisbon Main Stage, Mapping the new normals by Superchief Gallery</li>
+      </ul>
+      <h3>2023</h3>
+      <ul>
+        <li>“Eternity OF Soul” @ NFT NYC, New York</li>
+        <li>“Faded Reality”, “Longing” for Superchief Galley “Cyberpunk Vol.5” @ The City Of Arts & Sciences, Valencia</li>
+        <li>“Faded Reality”, “Longing” for Superchief Galley “Cyberpunk Vol.5” @ Iham Gallery, Paris</li>
+        <li>“Faded Reality”, “Longing” for Superchief Galley “Cyberpunk Vol.5” @ Miami</li>
+        <li>“Faded Reality”, “Longing” for Superchief Galley “Cyberpunk Vol.5” @ Nox Gallery, Tokyo</li>
+        <li>“Sunset At The Harbor” + “Nirvana” @ “Primer Music Festival” @ Faliro, Athens</li>
+        <li>“Faded Reality”, “Longing” for Superchief Galley “Cyberpunk Vol.5” @ Crypto Art, Seoul</li>
+        <li>“Technicolor Love” , Cinematic Cyberverse @ Studio iDFK @ Toronto, CA</li>
+        <li>“Plastic Lovers” + “Fear of growing old” @ Met.AMS in Amsterdam</li>
+        <li>“Faded Reality” @ Scope Art Show, Miami Art Week 2023 – Ocean Drive, Miami</li>
+      </ul>
+      <h3>2022</h3>
+      <ul>
+        <li>“Lost Legacy” @ “Futureshape360” exhibit Denver, CO</li>
+        <li>“Lost Legacy” @ Ninfa Labs Gallery Opening, Milan IT</li>
+        <li>“Sleepdancer” Showcased @ “Profondamente Umano” by Benedetta D’Intino Onlus at “BASE Milano”, Milan, IT</li>
+        <li>“Eternity Of Soul” @ DANY2023 by NEAL digital gallery, Beijing</li>
+      </ul>
+    </div>
   </div>
 <script src='change_on_scroll.js'></script>
 </body>
