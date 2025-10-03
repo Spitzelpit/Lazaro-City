@@ -6,10 +6,10 @@ body {
   padding-bottom: 500px;
   color: white;
 }
-a{
+a {
   text-decoration: none;
 }
-.hamburger{
+.hamburger {
   position: fixed;
   right: 30px;
   top: 30px;
@@ -25,15 +25,13 @@ a{
   padding: 5px;
   z-index: 10;
 }
-
-.hamburger div{
+.hamburger div {
   width: 75%;
   height: 5px;
   background-color: white;
   border-radius: 2px;
 }
-
-.mobile-menu-fullscreen{
+.mobile-menu-fullscreen {
   width: 100%;
   height: 100vh;
   position: fixed;
@@ -42,9 +40,7 @@ a{
   z-index: 9;
   display: none;
 }
-
-
-.mobile-menu-list{
+.mobile-menu-list {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -54,16 +50,14 @@ a{
   justify-content: space-around;
   align-items: center;
 }
-
-.mobile-menu-list > *{
+.mobile-menu-list > * {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-
-.menu-show{
+.menu-show {
   display: block;
 }
-.header{
+.header {
   position: fixed;
   width: 100%;
   height: 100px;
@@ -71,12 +65,10 @@ a{
   clip-path: polygon(0 0, 100% 0, 100% 60%, 30% 60%, 25% 100%, 0 100% );
   z-index: 10;
 }
-
-#navbar{
-    transition: top 0.3s;
+#navbar {
+  transition: top 0.3s;
 }
-
-#header-lazaro-container{
+#header-lazaro-container {
   position: relative;
   height: 100%;
   width: 25%;
@@ -84,14 +76,13 @@ a{
   justify-content: center;
   align-items: center;
 }
-
-#header-lazaro{
+#header-lazaro {
   color: white;
   font-size: 70px;
   margin: 0;
   cursor: pointer;
 }
-.header-links{
+.header-links {
   position: fixed;
   top: 0;
   left: 30%;
@@ -100,31 +91,28 @@ a{
   display: flex;
   justify-content: space-around;
 }
-.header-links a{
+.header-links a {
   margin-top: auto;
   margin-bottom: auto;
   color: white;
   font-size: 20px;
 }
-
-.header-links a:hover{
+.header-links a:hover {
   text-decoration: underline;
   cursor: pointer;
 }
-.icons{
+.icons {
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
-
-.icons i{
+.icons i {
   scale: 0.85;
   cursor: pointer;
 }
-.icons i:hover{
+.icons i:hover {
   scale: 1;
 }
-
 #title_video {
   position: absolute;
   z-index: -1;
@@ -134,13 +122,11 @@ a{
   height: 100%;
   object-fit: cover;
 }
-
 .title-screen {
   width: 100%;
   height: 100vh;
   position: relative;
 }
-
 .heading-wrapper {
   position: absolute;
   width: fit-content;
@@ -157,13 +143,11 @@ a{
   background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(10px);
 }
-
 .auction-grid {
   display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(min(550px, 100%), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(550px, 100%), 1fr));
   place-content: space-evenly;
 }
-
 .auction-container {
   height: 400px;
   background-color: rgb(29, 29, 29);
@@ -172,7 +156,6 @@ a{
   display: flex;
   align-items: top;
 }
-
 .auction-video {
   height: 100%;
   border-bottom-left-radius: 20px;
@@ -180,21 +163,18 @@ a{
   border-bottom-right-radius: 5px;
   border-top-right-radius: 5px;
 }
-
 .auction-heading {
   color: white;
   padding: 20px;
   flex-grow: 1;
   font-size: 25px;
 }
-
-.auction-price{
+.auction-price {
   color: white;
   padding-left: 20px;
   font-size: 20px;
 }
-
-.auction-bid-btn-container{
+.auction-bid-btn-container {
   padding: 0px;
   width: 180px;
   display: flex;
@@ -202,7 +182,7 @@ a{
   height: fit-content;
   margin-left: 20px;
 }
-.auction-bid-btn{
+.auction-bid-btn {
   background: none;
   border-style: none;
   color: rgb(29, 29, 29);
@@ -212,8 +192,7 @@ a{
   width: 130px;
   clip-path: polygon(0 0 , 100% 0, calc(100% - 10px) 100%, 0 100%);
 }
-
-.auction-bid-btn-deco{
+.auction-bid-btn-deco {
   padding: 0px;
   width: 30px;
   height: 30px;
@@ -221,53 +200,46 @@ a{
   clip-path: polygon(10px 0 , 100% 0, calc(100% - 10px) 100%, 0 100%);
   transition: 0.3s;
 }
-
-.auction-bid-btn-container:hover .auction-bid-btn-deco{
+.auction-bid-btn-container:hover .auction-bid-btn-deco {
   margin-left: -8px;
 }
-
-.my-art-preview-container{
+.my-art-preview-container {
   display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   place-content: space-evenly;
   gap: 30px;
   margin: 50px 30px;
 }
-.my-art-container-small{
+.my-art-container-small {
   height: 550px;
   position: relative;
   display: flex; 
   justify-content: center;
   align-items: top;
 }
-
-
-.my-art-container-small video{
+.my-art-container-small video {
   height: 100%;
   border-radius: 20px;
   mask: linear-gradient(to top, transparent, black 40%);
   object-fit: cover;
 }
-
-.video_subheading{
+.video_subheading {
   display: inline-block;
-  position:absolute;
+  position: absolute;
   bottom: 0px;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 400px;
   text-align: center;
 }
-
-.heading{
+.heading {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   font-size: 40px;
   margin-top: 40px;
 }
-
-.see-more-btn{
+.see-more-btn {
   background-color: white;
   background: none;
   border-style: none;
@@ -279,8 +251,7 @@ a{
   clip-path: polygon(5px 0, 100% 0, 100% calc(100% - 5px), calc(100% - 5px) 100%, 0 100%, 0 5px);
   margin-left: 10%;
 }
-
-#scroll-image{
+#scroll-image {
   position: fixed;
   right: 0%;
   top: 0%;
@@ -289,32 +260,27 @@ a{
   z-index: 5;
   object-fit: cover;
 }
-
-.cv-text-div{
+.cv-text-div {
   width: 65%;
   font-family: Roboto;
   padding-top: 300px;
   padding-bottom: 100vh;
 }
-
-.cv-text-div p{
+.cv-text-div p {
   width: 45%;
   margin-left: auto;
   margin-right: auto;
   font-size: 20px;
-  font-family:  Roboto;
+  font-family: Roboto;
 }
-
-.cv-text-div p + p{
+.cv-text-div p + p {
   margin-top: 250px;
 }
-
-.cv-container h3{
+.cv-container h3 {
   text-align: center;
   font-size: 25px;
 }
-
-.cv-container{
+.cv-container {
   margin-top: 350px;
   font-size: 19px;
   width: 45%;
@@ -323,13 +289,12 @@ a{
   transform: translate(-50%);
   line-height: 30px;
 }
-
-.cv-container li, h3{
+.cv-container li, h3 {
   animation: appear 5s linear;
   animation-timeline: view();
   animation-range: entry -20% cover 40%;
 }
-.link-comtainer{
+.link-container {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -337,99 +302,99 @@ a{
   max-width: 1000px;
   width: 80%;
 }
-.art-on-chain-link-div{
+.art-on-chain-link-div {
   height: 160px;
+  width: 100%;
   position: relative;
 }
-.art-on-chain-video{
+.art-on-chain-video {
   height: 100%;
   width: 100%;
   object-fit: cover;
   object-position: 50% 50%;
 }
-
-.art-on-chain-name{
+.art-on-chain-name {
   position: absolute;
   top: 50%;
   left: 50%;
-  /*transform: translate(-50%, -50%);*/
+  transform: translate(-50%, -50%);
   font-size: 30px;
+  text-align: center;
+  line-height: 1;
+  margin: 0;
+  cursor: pointer;
 }
 @media only screen and (max-width: 1700px) {
-  .heading-wrapper{
+  .heading-wrapper {
     --s: 50px;
   }
-
 } 
 @media only screen and (max-width: 1100px) {
-  #header-lazaro{
+  #header-lazaro {
     font-size: 45px;
   }
-  .heading-wrapper{
+  .heading-wrapper {
     font-size: 1.5vh;
     --s: 25px;
   }
 } 
 @media only screen and (max-width: 768px) {
-  #navbar{
+  #navbar {
     display: none;
   }
-  .hamburger{
+  .hamburger {
     display: flex;
   }
-  .heading-wrapper{
+  .heading-wrapper {
     font-size: 1.5vh;
     --s: 25px;
     width: 80%;
   }
-  .auction-container{
+  .auction-container {
     flex-direction: column;
     height: fit-content;
     padding-bottom: 50px;
   }
-  .auction-video{
+  .auction-video {
     height: auto;
     width: 100%;
   }
-  .auction-video{
+  .auction-video {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
   }
-  #scroll-image{
+  #scroll-image {
     display: none;
   }
-  .cv-text-div{
+  .cv-text-div {
     width: 100%;
   }
-  .cv-container{
+  .cv-container {
     left: 50%;
     padding-bottom: 50vh;
   }
-
-  .cv-text-div p, .cv-container{
+  .cv-text-div p, .cv-container {
     width: 70%;
   }
 }
-
-@keyframes appear{
-  from{
+@keyframes appear {
+  from {
     opacity: 0.4;
     scale: 0.925;
   }
-  to{
+  to {
     opacity: 1;
     scale: 1;
   }
 }
-
-@keyframes disappear{
-  from{
+@keyframes disappear {
+  from {
     opacity: 1;
     scale: 1;
   }
-  to{
+  to {
     opacity: 0.4;
     scale: 0.925;
   }

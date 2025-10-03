@@ -1,11 +1,12 @@
-const videos = document.querySelectorAll('.video');
+const containers = document.querySelectorAll('.art-on-chain-link-div');
 
-videos.forEach(video => {
-  video.addEventListener('mouseenter', () => {
+containers.forEach(container => {
+  video = container.querySelector("video");
+  container.addEventListener('mouseenter', () => {
     video.play();
   });
   
-  video.addEventListener('mouseleave', () => {
+  container.addEventListener('mouseleave', () => {
     video.pause();
     video.currentTime = 0;
   });
