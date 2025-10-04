@@ -306,19 +306,21 @@ a {
   height: 160px;
   width: 100%;
   position: relative;
+  font-size: 40px;
+  margin: 10px;
 }
 .art-on-chain-video {
   height: 100%;
   width: 100%;
   object-fit: cover;
   object-position: 50% 50%;
+  border-radius: 10px;
 }
 .art-on-chain-name {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 30px;
   text-align: center;
   line-height: 1;
   margin: 0;
@@ -377,6 +379,11 @@ a {
   }
   .cv-text-div p, .cv-container {
     width: 70%;
+  }
+
+  .art-on-chain-link-div{
+    height: 100px;
+    font-size: 20px;
   }
 }
 @keyframes appear {
